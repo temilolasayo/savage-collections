@@ -1,20 +1,8 @@
-/* @import "bootstrap.min.css";
-@import "font-awesome.min.css";
-@import "preloader.css"; */
-
-/*--------------------*/
-/* 01. Web Fonts */
-/*--------------------*/
-
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700,900");
 @font-face {
   font-family: "Lemon Jelly";
   src: url("../fonts/LemonJellyPersonalUse-dEqR.ttf");
 }
-
-/*--------------------*/
-/* 02. Common CSS */
-/*--------------------*/
 
 body,
 html {
@@ -87,9 +75,6 @@ a:focus {
   box-shadow: 0px 2px 3px #9c9c9c;
 }
 
-/*--------------------*/
-/* 03. Section Panel UI CSS */
-/*--------------------*/
 
 .sc-container {
   margin-top: 50px;
@@ -279,10 +264,6 @@ a:focus {
   text-decoration: underline;
 }
 
-/*--------------------*/
-/* 04. Check box UI CSS */
-/*--------------------*/
-
 .checkbox input[type="checkbox"] {
   position: absolute;
   right: 9000px;
@@ -334,9 +315,6 @@ a:focus {
   content: "\f00c";
 }
 
-/*--------------------*/
-/* 05. Responsive CSS */
-/*--------------------*/
 
 @media (min-width: 768px) {
   .sc-panel {
@@ -378,11 +356,6 @@ a:focus {
   .sc-login .sc-panel {
     padding: 20px;
   }
-
-  .panel-login .remember-row {
-    margin-bottom: 10px;
-    font-size: 14px;
-  }
 }
 
 @media (max-width: 320px) {
@@ -393,12 +366,4 @@ a:focus {
     font-size: 14px;
   }
 
-  .remember-row .col-sm-6 {
-    width: 100%;
-  }
-
-  .sc-login .forgotPwd {
-    text-align: left;
-    margin-top: 0px;
-  }
 }
