@@ -1,20 +1,8 @@
-/* @import "bootstrap.min.css";
-@import "font-awesome.min.css";
-@import "preloader.css"; */
-
-/*--------------------*/
-/* 01. Web Fonts */
-/*--------------------*/
-
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700,900");
 @font-face {
   font-family: "Lemon Jelly";
   src: url("../fonts/LemonJellyPersonalUse-dEqR.ttf");
 }
-
-/*--------------------*/
-/* 02. Common CSS */
-/*--------------------*/
 
 body,
 html {
@@ -82,14 +70,10 @@ a:focus {
   border-color: #486ff2;
 }
 
-.sc-login .btn.btn-lg {
+.sc-register .btn.btn-lg {
   border-radius: 3px;
   box-shadow: 0px 2px 3px #9c9c9c;
 }
-
-/*--------------------*/
-/* 03. Section Panel UI CSS */
-/*--------------------*/
 
 .sc-container {
   margin-top: 50px;
@@ -113,7 +97,7 @@ a:focus {
   box-shadow: 0px 2px 6px 0px #1d2030;
 }
 
-.sc-login,
+.sc-register,
 .sc-panel-left .brand-col {
   height: 500px;
 }
@@ -128,15 +112,7 @@ a:focus {
   vertical-align: middle;
 }
 
-.sc-panel-left .brand-col .headline h1,
-.sc-panel-left .brand-col .headline h2,
-.sc-panel-left .brand-col .headline h3 {
-  color: #fff;
-  font-size: 48px;
-  font-weight: 700;
-}
-
-.sc-login {
+.sc-register {
   position: relative;
   top: 0;
   left: 0;
@@ -160,64 +136,22 @@ a:focus {
   margin-bottom: 30px;
 }
 
-.sc-login .auth-title {
+.sc-register .sc-title {
   font-weight: 700;
 }
 
-.sc-login .sc-panel.active {
+.sc-register .sc-panel.active {
   opacity: 1;
   transform: translateX(0);
   -webkit-transform: translateX(0);
 }
 
-.brand-col .social-buttons a {
-  color: #ffffff;
-  margin-top: 15px;
-}
-
-.brand-col .social-buttons a:hover {
-  color: white;
-  opacity: 0.9;
-}
-
-.brand-col .social-buttons .btn-facebook {
-  background: #3b5998;
-}
-.brand-col .social-buttons .btn-twitter {
-  background: #00aced;
-}
-.brand-col .social-buttons .btn-google {
-  background: #c32f10;
-}
-
-.brand-col .social-buttons a > span {
-  padding-left: 5px;
-}
-
-.panel-login {
+.panel-register {
   margin-top: 20px;
 }
 
-.panel-login .remember-row {
-  margin-bottom: 10px;
-}
-
-.panel-login .remember-row label {
-  font-weight: normal;
-  position: relative;
-  cursor: pointer;
-  color: #666;
-  padding-left: 24px;
-}
-
-.sc-login .forgotPwd {
-  text-align: right;
-  margin-top: 10px;
-}
-
-.panel-login .form-control,
-.panel-signup .form-control,
-.panel-forgot .form-control {
+.panel-register .form-control,
+.panel-signup .form-control {
   background-color: #fff;
   color: #333333;
   font-size: 18px;
@@ -232,13 +166,8 @@ a:focus {
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1), 0 0 2px 0 rgba(0, 0, 0, 0.1);
 }
 
-.sc-panel.panel-forgot {
-  padding-top: 40px;
-}
-
-.panel-login .form-control:focus,
-.panel-signup .form-control:focus,
-.panel-forgot .form-control:focus {
+.panel-register .form-control:focus,
+.panel-signup .form-control:focus {
   border-color: #4f77ff;
   z-index: 2;
   outline: 0;
@@ -258,7 +187,7 @@ a:focus {
   z-index: 2;
 }
 
-.panel-login .pwdMask .pwd-toggle,
+.panel-register .pwdMask .pwd-toggle,
 .panel-signup .pwdMask .pwd-toggle {
   top: 15px;
   right: 15px;
@@ -278,65 +207,6 @@ a:focus {
 .panel-signup .term-policy a {
   text-decoration: underline;
 }
-
-/*--------------------*/
-/* 04. Check box UI CSS */
-/*--------------------*/
-
-.checkbox input[type="checkbox"] {
-  position: absolute;
-  right: 9000px;
-}
-
-.checkbox input[type="checkbox"] + .label-text:before,
-.checkbox input[type="checkbox"] + .label-text:after {
-  font-size: 11px;
-  display: inline-block;
-  width: 17px;
-  height: 17px;
-  padding: 2px;
-  margin-left: 0;
-  position: absolute;
-  top: 2px;
-  left: 0;
-}
-
-.checkbox input[type="checkbox"] + .label-text:before {
-  content: "";
-  background-color: #ffffff;
-  border: 1px solid #ced4da;
-  border-radius: 3px;
-  cursor: pointer;
-  -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
-  transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
-}
-
-.checkbox input[type="checkbox"] + .label-text:after {
-  background-color: #4f77ff;
-  color: #ffffff;
-  border-radius: 2px;
-  border-color: #4f77ff;
-  line-height: 1.4;
-}
-
-.checkbox input[type="checkbox"] {
-  opacity: 0;
-  z-index: 1;
-  cursor: pointer;
-}
-.checkbox input[type="checkbox"]:focus + .label-text:before {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
-.checkbox input[type="checkbox"]:checked + .label-text:after {
-  font-family: "FontAwesome";
-  content: "\f00c";
-}
-
-/*--------------------*/
-/* 05. Responsive CSS */
-/*--------------------*/
 
 @media (min-width: 768px) {
   .sc-panel {
@@ -375,30 +245,16 @@ a:focus {
 }
 
 @media (min-width: 320px) and (max-width: 375px) {
-  .sc-login .sc-panel {
+  .sc-register .sc-panel {
     padding: 20px;
-  }
-
-  .panel-login .remember-row {
-    margin-bottom: 10px;
-    font-size: 14px;
   }
 }
 
 @media (max-width: 320px) {
-  .sc-login {
+  .sc-register {
     height: 480px;
   }
   .sc-heading p {
     font-size: 14px;
-  }
-
-  .remember-row .col-sm-6 {
-    width: 100%;
-  }
-
-  .sc-login .forgotPwd {
-    text-align: left;
-    margin-top: 0px;
   }
 }

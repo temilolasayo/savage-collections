@@ -16,7 +16,7 @@
           : a(e).attr("type", "password");
     }),
     a("#forget-lnk").on("click", function () {
-      a(".sc-login .nav-tabs").find("li").removeClass("active");
+      a(".sc-register .nav-tabs").find("li").removeClass("active");
     }),
     a(window).on("load", function () {
       a(".square-block").fadeOut(),
