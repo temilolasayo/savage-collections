@@ -1,0 +1,112 @@
+<div class="container-fluid">
+  <div class="row">
+    <div
+      class="sc-container col-xs-12 col-sm-10 col-md-8 col-lg-6 col-sm-offset-1 col-md-offset-2 col-lg-offset-3"
+    >
+      <div class="col-sm-5 sc-panel-left">
+        <div class="brand-col">
+          <div class="headline text-center">
+            <div class="brand-logo">
+              SC
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-7 sc-panel-right">
+        <!-- sc-login start -->
+        <div class="sc-login">
+          <!-- panel-signup start -->
+          <div class="sc-panel panel-login text-center active">
+            <div class="row">
+              <% if (messages.success) { %>
+              <div class="alert alert-success" role="alert">
+                <%- messages.success %>
+              </div>
+              <% } %> <% if (messages.error) { %>
+              <div class="alert alert-danger" role="alert">
+                <%- messages.error %>
+              </div>
+              <% } %>
+              <div class="col-xs-12 col-sm-12">
+                <div class="sc-heading">
+                  <h3 class="auth-title">Sign up for free!</h3>
+                </div>
+                <form
+                  name="signupForm"
+                  class="signupForm"
+                  action="/index"
+                  method="POST"
+                >
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      placeholder="Email Address"
+                      id="email"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="name"
+                      placeholder="Name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <div class="pwdMask">
+                      <input
+                        type="password"
+                        class="form-control"
+                        name="password"
+                        placeholder="Password"
+                        id="password"
+                        minlength="6"
+                        maxlength="10"
+                        required
+                      />
+                      <span class="fa fa-eye-slash pwd-toggle"></span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <p class="term-policy text-muted small">
+                      <input
+                        type="checkbox"
+                        id="policy"
+                        name="policy"
+                        value="true"
+                        required
+                      />
+
+                      <a href="#">
+                        I agree to the privacy policy and terms of service</a
+                      >.
+                    </p>
+                  </div>
+
+                  <div class="form-group">
+                    <button
+                      class="btn btn-lg btn-primary btn-block"
+                      type="submit"
+                    >
+                      Sign up with email
+                    </button>
+                  </div>
+                </form>
+
+                <!-- <a href="#">Already have an account?</a> -->
+              </div>
+            </div>
+          </div>
+          <!-- ./panel-signup -->
+        </div>
+        <!-- ./sc-login -->
+      </div>
+    </div>
+  </div>
+  <!-- ./row -->
+</div>
