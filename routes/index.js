@@ -51,14 +51,13 @@ router.post("/index", function (req, res, next) {
           if (err) {
             req.flash("error", "Email exists");
           } else {
-            query = "SELECT * FROM scusers ? WHERE email = " + email;
-            console.log(query);
             req.flash("success", "Account created successfully");
             res.redirect("/");
           }
         });
       }
     });
+    // dbConn.destroy();
   }
 });
 
